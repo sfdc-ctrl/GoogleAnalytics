@@ -1,0 +1,17 @@
+<apex:page controller="GenericConnectorController">
+    <apex:form >
+		<apex:pageBlock >
+		
+			<apex:pageblockButtons >
+				<apex:commandButton title="Auth with Google" value="Auth With Google" action="{!doGetAuthorizationCode}"/>
+				<apex:commandButton title="Get Access Token" value="Get Access Token" action="{!doGetAccessToken}"/>
+				<apex:commandButton title="doListAnalyticsData" value="Analytics - Data" action="{!doListAnalyticsData}"/>
+			</apex:pageblockButtons>
+			
+			<apex:pageBlock >
+			   {!Result}
+			</apex:pageBlock>
+			
+		</apex:pageBlock>
+    </apex:form>
+</apex:page>
